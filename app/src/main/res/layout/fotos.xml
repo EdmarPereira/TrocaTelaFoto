@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tela de Troca de Fotos"
+        android:layout_marginTop="12dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ir para tela principal"
+        android:id="@+id/bttelaprincipal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="16dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:baselineAligned="false"
+        android:orientation="vertical"
+        android:layout_below="@+id/textView2"
+        android:id="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <ImageView
+            android:id="@+id/imgFoto1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="false"
+            app:srcCompat="@drawable/foto1" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtInformacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout"
+        android:layout_alignStart="@+id/linearLayout"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginTop="46dp"
+        android:text="Foto 01"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/btnFoto2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Foto 02"
+        android:layout_below="@+id/btnFoto1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/btnFoto1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtInformacao"
+        android:layout_marginTop="22dp"
+        android:layout_toEndOf="@+id/txtInformacao"
+        android:text="Foto 01"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
